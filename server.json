@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.sylai/pulse",
+  "title": "Syl Pulse",
+  "description": "Causal analytics: ask a business question, get a deterministic causal answer and charts.",
+  "repository": {
+    "url": "https://github.com/connor274/syl-pulse-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "websiteUrl": "https://sylai.io/pulse",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pulse.sylai.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your Syl API key (the same key as Syl Guardian; get a trial key at https://sylai.io/guardian).",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
